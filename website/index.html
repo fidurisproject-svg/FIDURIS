@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FIDURIS | Clear by Design. Verifiable On-Chain.</title>
+
+  <meta
+    name="description"
+    content="FIDURIS (FID) is a fixed-supply BEP-20 token on BNB Chain with publicly verifiable contracts, vesting, liquidity and Mainnet activity."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="nav-shell">
+
+      <a href="#home" class="brand">
+        <img src="assets/fiduris-logo.png" alt="FIDURIS">
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#vesting">Vesting</a>
+        <a href="#liquidity">Liquidity</a>
+        <a href="#verify">Verify</a>
+        <a href="#documents">Documents</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a
+          class="nav-button primary"
+          href="https://bscscan.com/token/0x60fabB10244037718b907De9ec7E17A622A8B482"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          BscScan ↗
+        </a>
+
+        <a
+          class="nav-button"
+          href="https://github.com/fidurisproject-svg/FIDURIS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="page-shell hero-layout">
+
+        <div class="hero-content">
+
+          <div class="network-badge">
+            <span class="network-dot"></span>
+            <strong>BNB CHAIN</strong>
+            <span>MAINNET</span>
+          </div>
+
+          <div class="hero-brand">
+            <div class="hero-f" aria-hidden="true">
+              <span class="f-top"></span>
+              <span class="f-mid"></span>
+              <span class="f-bottom"></span>
+            </div>
+
+            <h1>FIDURIS</h1>
+          </div>
+
+          <h2 class="hero-tagline">
+            Clear by Design.
+            <span>Verifiable On-Chain.</span>
+          </h2>
+
+          <p class="hero-description">
+            A fixed-supply BEP-20 token built around simple token logic,
+            separate on-chain vesting contracts and publicly verifiable
+            Mainnet activity.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="button primary"
+              href="https://bscscan.com/token/0x60fabB10244037718b907De9ec7E17A622A8B482"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View FID on BscScan ↗
+            </a>
+
+            <a
+              class="button secondary"
+              href="https://github.com/fidurisproject-svg/FIDURIS"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+          </div>
+
+          <div class="contract-box">
+            <div>
+              <span class="contract-label">Official FID Contract</span>
+              <code id="contractAddress">
+                0x60fabB10244037718b907De9ec7E17A622A8B482
+              </code>
+            </div>
+
+            <button
+              class="copy-button"
+              id="copyContract"
+              type="button"
+              aria-label="Copy contract address"
+            >
+              Copy
+            </button>
+          </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+        <div class="hero-visual" aria-hidden="true">
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="coin-glow"></div>
+
+          <div class="fid-coin">
+            <div class="coin-inner">
+              <div class="coin-f">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-grid"></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERO STATS -->
+      <div class="page-shell">
+        <div class="stats-bar">
+
+          <article class="stat">
+            <div class="stat-icon">◎</div>
+            <div>
+              <span>Total Supply</span>
+              <strong>10,000,000 FID</strong>
+              <small>Fixed. No additional minting.</small>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat-icon">0%</div>
+            <div>
+              <span>Transfer Tax</span>
+              <strong>0%</strong>
+              <small>No buy, sell or transfer tax.</small>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat-icon">✓</div>
+            <div>
+              <span>Restrictions</span>
+              <strong>No Blacklist</strong>
+              <small>No hidden wallet restrictions.</small>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat-icon">Ⅱ</div>
+            <div>
+              <span>Transfers</span>
+              <strong>No Pause</strong>
+              <small>No token pause functionality.</small>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat-icon">◈</div>
+            <div>
+              <span>Vesting</span>
+              <strong>4 Contracts</strong>
+              <small>Dedicated on-chain vesting.</small>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="page-shell">
+
+        <div class="section-heading">
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="section-kicker">ABOUT FIDURIS</p>
+            <h2>Simple token logic. Publicly verifiable structure.</h2>
+          </div>
+        </div>
+
+        <div class="about-layout">
+
+          <div class="lead-copy">
+            <p>
+              FIDURIS (FID) is deployed on BNB Chain Mainnet with a fixed
+              maximum supply of 10,000,000 FID.
+            </p>
+
+            <p>
+              The token contract is intentionally kept simple. Vesting,
+              liquidity and operational records are separated from the core
+              token logic and can be independently inspected on-chain.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+
+            <article class="info-card">
+              <span class="card-number">01</span>
+              <h3>Fixed Supply</h3>
+              <p>
+                Maximum supply is fixed at 10,000,000 FID.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span class="card-number">02</span>
+              <h3>No Additional Minting</h3>
+              <p>
+                The deployed token has no mechanism for increasing supply.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span class="card-number">03</span>
+              <h3>No Transfer Tax</h3>
+              <p>
+                Normal transfers do not include token-level buy, sell or transfer tax.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span class="card-number">04</span>
+              <h3>No Blacklist</h3>
+              <p>
+                The token does not contain blacklist functionality or hidden wallet restrictions.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span class="card-number">05</span>
+              <h3>No Pause</h3>
+              <p>
+                Normal transfers cannot be paused through the token contract.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span class="card-number">06</span>
+              <h3>18 Decimals</h3>
+              <p>
+                Standard BEP-20 decimal configuration.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TOKENOMICS -->
+    <section id="tokenomics" class="section section-dark">
+      <div class="page-shell">
+
+        <div class="section-heading">
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="section-kicker">TOKENOMICS</p>
+            <h2>10,000,000 FID. 100% accounted for.</h2>
+          </div>
+        </div>
+
+        <div class="supply-banner">
+
+          <div>
+            <span>Maximum Supply</span>
+            <strong>10,000,000</strong>
+            <small>FID</small>
+          </div>
+
+          <div class="supply-rule">
+            Fixed supply
+            <span></span>
+            No additional minting
+          </div>
+
+        </div>
+
+        <div class="tokenomics-grid">
+
+          <article class="allocation-card liquidity-allocation">
+            <span class="percentage">20%</span>
+            <h3>Initial Liquidity</h3>
+            <strong>2,000,000 FID</strong>
+            <div class="allocation-bar">
+              <span style="width:20%"></span>
+            </div>
+          </article>
+
+          <article class="allocation-card">
+            <span class="percentage">30%</span>
+            <h3>Liquidity Reserve</h3>
+            <strong>3,000,000 FID</strong>
+            <div class="allocation-bar">
+              <span style="width:30%"></span>
+            </div>
+          </article>
+
+          <article class="allocation-card">
+            <span class="percentage">30%</span>
+            <h3>Ecosystem & Community</h3>
+            <strong>3,000,000 FID</strong>
+            <div class="allocation-bar">
+              <span style="width:30%"></span>
+            </div>
+          </article>
+
+          <article class="allocation-card">
+            <span class="percentage">10%</span>
+            <h3>Development</h3>
+            <strong>1,000,000 FID</strong>
+            <div class="allocation-bar">
+              <span style="width:10%"></span>
+            </div>
+          </article>
+
+          <article class="allocation-card">
+            <span class="percentage">10%</span>
+            <h3>Team</h3>
+            <strong>1,000,000 FID</strong>
+            <div class="allocation-bar">
+              <span style="width:10%"></span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="notice">
+          <strong>8,000,000 FID</strong>
+          outside the initial-liquidity allocation were transferred to
+          dedicated on-chain vesting contracts.
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- VESTING -->
+    <section id="vesting" class="section">
+      <div class="page-shell">
+
+        <div class="section-heading">
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="section-kicker">ON-CHAIN VESTING</p>
+            <h2>Four allocations. Four dedicated contracts.</h2>
+          </div>
+        </div>
+
+
+        <div class="vesting-grid">
+
+          <article class="vesting-card">
+            <div class="vesting-top">
+              <div>
+                <span>Liquidity Reserve</span>
+                <h3>3,000,000 FID</h3>
+              </div>
+
+              <strong>30%</strong>
+            </div>
+
+            <div class="vesting-data">
+              <p>
+                <span>Cliff</span>
+                <strong>90 days</strong>
+              </p>
+
+              <p>
+                <span>Total duration</span>
+                <strong>810 days</strong>
+              </p>
+
+              <p>
+                <span>Vested at cliff</span>
+                <strong>≈333,333.33 FID</strong>
+              </p>
+            </div>
+
+            <a
+              href="https://bscscan.com/address/0xA633245e9De4542ff61b501702C0D1E86496ece7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Contract on BscScan ↗
+            </a>
+          </article>
+
+
+          <article class="vesting-card">
+            <div class="vesting-top">
+              <div>
+                <span>Ecosystem & Community</span>
+                <h3>3,000,000 FID</h3>
+              </div>
+
+              <strong>30%</strong>
+            </div>
+
+            <div class="vesting-data">
+              <p>
+                <span>Cliff</span>
+                <strong>90 days</strong>
+              </p>
+
+              <p>
+                <span>Total duration</span>
+                <strong>1,440 days</strong>
+              </p>
+
+              <p>
+                <span>Vested at cliff</span>
+                <strong>187,500 FID</strong>
+              </p>
+            </div>
+
+            <a
+              href="https://bscscan.com/address/0xfCD582DE365f1863430194082Babe6A0e8a2C2c4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Contract on BscScan ↗
+            </a>
+          </article>
+
+
+          <article class="vesting-card">
+            <div class="vesting-top">
+              <div>
+                <span>Development</span>
+                <h3>1,000,000 FID</h3>
+              </div>
+
+              <strong>10%</strong>
+            </div>
+
+            <div class="vesting-data">
+              <p>
+                <span>Cliff</span>
+                <strong>90 days</strong>
+              </p>
+
+              <p>
+                <span>Total duration</span>
+                <strong>1,440 days</strong>
+              </p>
+
+              <p>
+                <span>Vested at cliff</span>
+                <strong>62,500 FID</strong>
+              </p>
+            </div>
+
+            <a
+              href="https://bscscan.com/address/0x6E86aCaE9A77079Eb291B3f2FF5fb2f5ca0bd521"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Contract on BscScan ↗
+            </a>
+          </article>
+
+
+          <article class="vesting-card">
+            <div class="vesting-top">
+              <div>
+                <span>Team</span>
+                <h3>1,000,000 FID</h3>
+              </div>
+
+              <strong>10%</strong>
+            </div>
+
+            <div class="vesting-data">
+              <p>
+                <span>Cliff</span>
+                <strong>360 days</strong>
+              </p>
+
+              <p>
+                <span>Total duration</span>
+                <strong>1,800 days</strong>
+              </p>
+
+              <p>
+                <span>Vested at cliff</span>
+                <strong>200,000 FID</strong>
+              </p>
+            </div>
+
+            <a
+              href="https://bscscan.com/address/0x3032d2cf76cEE36D9b5e9D1A27E5F114fFBc1384"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Contract on BscScan ↗
+            </a>
+          </article>
+
+        </div>
+
+
+        <div class="policy-box">
+          <h3>Vesting controls availability — not spending.</h3>
+
+          <p>
+            Vested tokens are not automatically released, sold or spent.
+            The vesting contracts determine when tokens become eligible for
+            release. Subsequent use remains subject to publicly stated project policy.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LIQUIDITY -->
+    <section id="liquidity" class="section section-dark">
+      <div class="page-shell">
+
+        <div class="section-heading">
+          <span class="section-number">04</span>
+
+          <div>
+            <p class="section-kicker">LIQUIDITY</p>
+            <h2>PancakeSwap Infinity. Locked with UNCX V4.</h2>
+          </div>
+        </div>
+
+
+        <div class="liquidity-layout">
+
+          <div class="liquidity-main">
+
+            <div class="pair-badge">
+              <span>BNB</span>
+              <span>/</span>
+              <strong>FID</strong>
+            </div>
+
+            <h3>PancakeSwap Infinity CLAMM</h3>
+
+            <p>
+              Initial liquidity was created on BNB Chain Mainnet using a
+              Full Range CLAMM position with a static 0.25% fee.
+            </p>
+
+            <div class="liquidity-links">
+
+              <a
+                class="button primary"
+                href="https://bscscan.com/tx/0x21f4b34f8bc2cdca644dc7f9b3d3517f38cd43c3e6fa9576fd036eaf9a93ec8d"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Liquidity Transaction ↗
+              </a>
+
+              <a
+                class="button secondary"
+                href="https://bscscan.com/tx/0x013697462504707858da08f80f1e319a798c723b9d31645c0d504bce0fb69424"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                UNCX Lock Transaction ↗
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="liquidity-data">
+
+            <article>
+              <span>Initial Liquidity Allocation</span>
+              <strong>2,000,000 FID</strong>
+            </article>
+
+            <article>
+              <span>Initial BNB Side</span>
+              <strong>≈1 BNB</strong>
+            </article>
+
+            <article>
+              <span>Fee Tier</span>
+              <strong>0.25%</strong>
+            </article>
+
+            <article>
+              <span>Range</span>
+              <strong>Full Range</strong>
+            </article>
+
+            <article>
+              <span>Position NFT</span>
+              <strong>#1047417</strong>
+            </article>
+
+            <article>
+              <span>UNCX Lock NFT</span>
+              <strong>#2</strong>
+            </article>
+
+            <article class="wide">
+              <span>Configured Unlock</span>
+              <strong>20 August 2028 — 19:18:20 UTC</strong>
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <div class="liquidity-note">
+          Approximately 99% of the original liquidity position remained locked
+          after the UNCX position fee.
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- VERIFY -->
+    <section id="verify" class="section verify-section">
+      <div class="page-shell">
+
+        <div class="section-heading">
+          <span class="section-number">05</span>
+
+          <div>
+            <p class="section-kicker">VERIFY ON-CHAIN</p>
+            <h2>Do not rely on claims. Inspect the records.</h2>
+          </div>
+        </div>
+
+
+        <div class="verify-grid">
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/token/0x60fabB10244037718b907De9ec7E17A622A8B482"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Token Contract</span>
+            <strong>FIDURIS / FID</strong>
+            <small>View on BscScan ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/address/0xA633245e9De4542ff61b501702C0D1E86496ece7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Vesting Contract</span>
+            <strong>Liquidity Reserve</strong>
+            <small>View on BscScan ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/address/0xfCD582DE365f1863430194082Babe6A0e8a2C2c4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Vesting Contract</span>
+            <strong>Ecosystem & Community</strong>
+            <small>View on BscScan ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/address/0x6E86aCaE9A77079Eb291B3f2FF5fb2f5ca0bd521"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Vesting Contract</span>
+            <strong>Development</strong>
+            <small>View on BscScan ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/address/0x3032d2cf76cEE36D9b5e9D1A27E5F114fFBc1384"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Vesting Contract</span>
+            <strong>Team</strong>
+            <small>View on BscScan ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/tx/0x21f4b34f8bc2cdca644dc7f9b3d3517f38cd43c3e6fa9576fd036eaf9a93ec8d"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Liquidity</span>
+            <strong>Creation Transaction</strong>
+            <small>View transaction ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/tx/0x013697462504707858da08f80f1e319a798c723b9d31645c0d504bce0fb69424"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Liquidity Lock</span>
+            <strong>UNCX V4</strong>
+            <small>View transaction ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/tx/0xddb5dc9a6f3b4d7d0bff3d0dae10161f35760527c734e86285b2f3db2217fe36"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Mainnet Validation</span>
+            <strong>BUY Test — PASS</strong>
+            <small>View transaction ↗</small>
+          </a>
+
+
+          <a
+            class="verify-card"
+            href="https://bscscan.com/tx/0x3259b98244f1c32f2d62479fa8e491d2aacfb376edc7afc6a117885a14272292"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Mainnet Validation</span>
+            <strong>SELL Test — PASS</strong>
+            <small>View transaction ↗</small>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- DOCUMENTS -->
+    <section id="documents" class="section section-dark">
+      <div class="page-shell">
+
+        <div class="section-heading">
+          <span class="section-number">06</span>
+
+          <div>
+            <p class="section-kicker">PUBLIC DOCUMENTATION</p>
+            <h2>Technical information available for independent review.</h2>
+          </div>
+        </div>
+
+
+        <div class="documents-grid">
+
+          <a
+            class="document-card"
+            href="https://github.com/fidurisproject-svg/FIDURIS/blob/main/WHITEPAPER.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>01</span>
+            <div>
+              <h3>FIDURIS Whitepaper</h3>
+              <p>
+                Token design, tokenomics, vesting, liquidity, roadmap,
+                risks and project principles.
+              </p>
+            </div>
+            <strong>↗</strong>
+          </a>
+
+
+          <a
+            class="document-card"
+            href="https://github.com/fidurisproject-svg/FIDURIS/blob/main/MAINNET_TEST_REPORT.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>02</span>
+            <div>
+              <h3>Mainnet Test Report</h3>
+              <p>
+                Deployment, funding, liquidity, lock and real Mainnet
+                trading-validation records.
+              </p>
+            </div>
+            <strong>↗</strong>
+          </a>
+
+
+          <a
+            class="document-card"
+            href="https://github.com/fidurisproject-svg/FIDURIS/blob/main/scripts/deployments-mainnet.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>03</span>
+            <div>
+              <h3>Mainnet Deployment Record</h3>
+              <p>
+                Canonical Mainnet addresses, transactions and deployment status.
+              </p>
+            </div>
+            <strong>↗</strong>
+          </a>
+
+
+          <a
+            class="document-card"
+            href="https://github.com/fidurisproject-svg/FIDURIS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>04</span>
+            <div>
+              <h3>GitHub Repository</h3>
+              <p>
+                Public source code, contracts, tests and technical documentation.
+              </p>
+            </div>
+            <strong>↗</strong>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PRINCIPLE -->
+    <section class="principle-section">
+      <div class="page-shell principle-layout">
+
+        <div class="principle-mark">
+          <div class="hero-f large-f" aria-hidden="true">
+            <span class="f-top"></span>
+            <span class="f-mid"></span>
+            <span class="f-bottom"></span>
+          </div>
+        </div>
+
+        <div>
+          <p class="section-kicker">FIDURIS PRINCIPLE</p>
+
+          <h2>
+            Clear by Design.
+            <span>Verifiable On-Chain.</span>
+          </h2>
+
+          <p>
+            Public documentation distinguishes between facts enforced by
+            deployed smart contracts and project policies that are not
+            technically enforced on-chain.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- DISCLAIMER -->
+    <section class="disclaimer-section">
+      <div class="page-shell">
+
+        <div class="disclaimer-box">
+
+          <div>
+            <span>Important</span>
+            <h2>Technical and educational information.</h2>
+          </div>
+
+          <div>
+            <p>
+              FIDURIS does not promise token-price appreciation, financial
+              returns, exchange listings or guaranteed future utility.
+            </p>
+
+            <p>
+              Blockchain assets involve technical, liquidity, market,
+              operational and regulatory risks. Users should independently
+              verify publicly available information and make their own decisions.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="page-shell footer-layout">
+
+      <div class="footer-brand">
+        <img src="assets/fiduris-logo.png" alt="FIDURIS">
+        <p>Clear by Design. Verifiable On-Chain.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#vesting">Vesting</a>
+        <a href="#liquidity">Liquidity</a>
+        <a href="#verify">Verify</a>
+
+        <a
+          href="https://github.com/fidurisproject-svg/FIDURIS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+      </div>
+
+      <div class="footer-contract">
+        <span>Official Contract</span>
+        <code>0x60fabB10244037718b907De9ec7E17A622A8B482</code>
+      </div>
+
+    </div>
+
+    <div class="page-shell footer-bottom">
+      <span>FIDURIS — BNB Chain Mainnet</span>
+      <span>FID</span>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
