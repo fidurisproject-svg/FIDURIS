@@ -2053,4 +2053,17 @@ button {
     height: 78px;
   }
 
+}.hero-f-image {
+  display: block;
+  width: clamp(76px, 9vw, 124px);
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.coin-f-image {
+  display: block;
+  width: 47%;
+  height: auto;
+  object-fit: contain;
 }
