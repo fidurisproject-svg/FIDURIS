@@ -1380,4 +1380,11 @@ body::before {
   .panel-master-logo {
     width: 64%;
   }
+}#vision,
+#tokenomics,
+#vesting,
+#liquidity,
+#verify,
+#documents {
+  scroll-margin-top: 120px;
 }
