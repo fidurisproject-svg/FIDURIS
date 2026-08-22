@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,7 @@
   >
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 
 <body>
@@ -37,6 +38,7 @@
 
       <nav class="nav" id="mainNav">
         <a href="#about">About</a>
+        <a href="#vision">Vision</a>
         <a href="#tokenomics">Tokenomics</a>
         <a href="#vesting">Vesting</a>
         <a href="#liquidity">Liquidity</a>
@@ -69,44 +71,49 @@
 
 
   <main>
-
     <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
+    <section id="home" class="hero fiduris-new-hero">
 
-      <div class="page-shell hero-layout">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-aura hero-aura-one"></div>
+        <div class="hero-aura hero-aura-two"></div>
+      </div>
 
-        <div class="hero-content">
+      <div class="page-shell new-hero-layout">
 
-          <div class="network-badge">
+        <div class="new-hero-copy">
+
+          <div class="network-badge new-network-badge">
             <span class="network-dot"></span>
             <strong>BNB CHAIN</strong>
             <span>MAINNET</span>
           </div>
 
-          <div class="hero-brand">
-            <div class="hero-f" aria-hidden="true">
-  <span class="f-top"></span>
-  <span class="f-mid"></span>
-  <span class="f-bottom"></span>
-</div>
-
-            <h1>FIDURIS</h1>
+          <div class="hero-logo-lockup">
+            <img
+              src="assets/fiduris-logo.png"
+              alt="FIDURIS"
+              class="hero-master-logo"
+            >
           </div>
 
-          <h2 class="hero-tagline">
-            Clear by Design.
-            <span>Verifiable On-Chain.</span>
-          </h2>
-
-          <p class="hero-description">
-            A fixed-supply BEP-20 token built around simple token logic,
-            separate on-chain vesting contracts and publicly verifiable
-            Mainnet activity.
+          <p class="hero-eyebrow">
+            FIXED SUPPLY · ON-CHAIN VESTING · LOCKED LIQUIDITY
           </p>
 
-          <div class="hero-actions">
+          <h1 class="new-hero-title">
+            Clear by Design.
+            <span>Verifiable On-Chain.</span>
+          </h1>
+
+          <p class="new-hero-description">
+            FIDURIS is a fixed-supply BEP-20 project built around simple
+            token logic, publicly verifiable contracts and a structure
+            designed to be inspected rather than merely trusted.
+          </p>
+
+          <div class="hero-actions new-hero-actions">
 
             <a
               class="button primary"
@@ -114,26 +121,22 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              View FID on BscScan ↗
+              Verify FID on BscScan ↗
             </a>
 
             <a
               class="button secondary"
-              href="https://github.com/fidurisproject-svg/FIDURIS"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#vision"
             >
-              GitHub ↗
+              Project Vision ↓
             </a>
 
           </div>
 
-          <div class="contract-box">
+          <div class="contract-box new-contract-box">
             <div>
-              <span class="contract-label">Official FID Contract</span>
-              <code id="contractAddress">
-                0x60fabB10244037718b907De9ec7E17A622A8B482
-              </code>
+              <span class="contract-label">OFFICIAL FID CONTRACT</span>
+              <code id="contractAddress">0x60fabB10244037718b907De9ec7E17A622A8B482</code>
             </div>
 
             <button
@@ -148,81 +151,91 @@
 
         </div>
 
+        <div class="new-hero-panel">
 
-        <!-- HERO VISUAL -->
-        <div class="hero-visual" aria-hidden="true">
-
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-
-          <div class="coin-glow"></div>
-
-          <div class="fid-coin">
-            <div class="coin-inner">
-              <img class="coin-f-image" src="assets/fiduris-f.png" alt="" aria-hidden="true">
-            </div>
+          <div class="panel-topline">
+            <span>FIDURIS / FID</span>
+            <strong>MAINNET LIVE</strong>
           </div>
 
-          <div class="visual-grid"></div>
+          <div class="panel-logo-stage">
+            <div class="panel-logo-glow"></div>
+
+            <img
+              src="assets/fiduris-logo.png"
+              alt=""
+              class="panel-master-logo"
+              aria-hidden="true"
+            >
+          </div>
+
+          <div class="hero-proof-grid">
+
+            <div class="proof-item">
+              <span>MAX SUPPLY</span>
+              <strong>10,000,000 FID</strong>
+            </div>
+
+            <div class="proof-item">
+              <span>TRANSFER TAX</span>
+              <strong>0%</strong>
+            </div>
+
+            <div class="proof-item">
+              <span>VESTING</span>
+              <strong>4 CONTRACTS</strong>
+            </div>
+
+            <div class="proof-item">
+              <span>LIQUIDITY</span>
+              <strong>LOCKED</strong>
+            </div>
+
+          </div>
+
+          <div class="panel-verification">
+            <span class="verification-pulse"></span>
+            Public Mainnet records available for independent verification
+          </div>
 
         </div>
 
       </div>
 
-
-      <!-- HERO STATS -->
       <div class="page-shell">
-        <div class="stats-bar">
+        <div class="new-stats-line">
 
-          <article class="stat">
-            <div class="stat-icon">◎</div>
-            <div>
-              <span>Total Supply</span>
-              <strong>10,000,000 FID</strong>
-              <small>Fixed. No additional minting.</small>
-            </div>
-          </article>
+          <div>
+            <span>NETWORK</span>
+            <strong>BNB Chain</strong>
+          </div>
 
-          <article class="stat">
-            <div class="stat-icon">0%</div>
-            <div>
-              <span>Transfer Tax</span>
-              <strong>0%</strong>
-              <small>No buy, sell or transfer tax.</small>
-            </div>
-          </article>
+          <div>
+            <span>SYMBOL</span>
+            <strong>FID</strong>
+          </div>
 
-          <article class="stat">
-            <div class="stat-icon">✓</div>
-            <div>
-              <span>Restrictions</span>
-              <strong>No Blacklist</strong>
-              <small>No hidden wallet restrictions.</small>
-            </div>
-          </article>
+          <div>
+            <span>SUPPLY</span>
+            <strong>Fixed</strong>
+          </div>
 
-          <article class="stat">
-            <div class="stat-icon">Ⅱ</div>
-            <div>
-              <span>Transfers</span>
-              <strong>No Pause</strong>
-              <small>No token pause functionality.</small>
-            </div>
-          </article>
+          <div>
+            <span>MINTING</span>
+            <strong>None</strong>
+          </div>
 
-          <article class="stat">
-            <div class="stat-icon">◈</div>
-            <div>
-              <span>Vesting</span>
-              <strong>4 Contracts</strong>
-              <small>Dedicated on-chain vesting.</small>
-            </div>
-          </article>
+          <div>
+            <span>BUY / SELL TEST</span>
+            <strong>PASS</strong>
+          </div>
 
         </div>
       </div>
 
     </section>
+
+
 
 
     <!-- ABOUT -->
@@ -310,6 +323,94 @@
       </div>
     </section>
 
+
+    <!-- VISION -->
+    <section id="vision" class="section vision-section">
+
+      <div class="page-shell">
+
+        <div class="vision-intro">
+
+          <div>
+            <p class="section-kicker">FIDURIS VISION</p>
+
+            <h2>
+              Build first.
+              <span>Prove on-chain.</span>
+              Expand with purpose.
+            </h2>
+          </div>
+
+          <p class="vision-lead">
+            FIDURIS is not designed around short-lived hype, token-price
+            promises or artificial expectations. The project starts with a
+            simple token structure and verifiable Mainnet foundation, then
+            grows only when there is a practical reason to add something.
+          </p>
+
+        </div>
+
+        <div class="vision-grid">
+
+          <article class="vision-card">
+            <span class="vision-number">01</span>
+            <h3>Start With a Verifiable Foundation</h3>
+            <p>
+              The first priority is a structure that can be independently
+              inspected: fixed supply, public contracts, separate vesting,
+              documented liquidity and real Mainnet validation.
+            </p>
+          </article>
+
+          <article class="vision-card">
+            <span class="vision-number">02</span>
+            <h3>Grow Through Real Use</h3>
+            <p>
+              Future development can include educational resources,
+              community tools, integrations, small applications and other
+              practical experiments where FIDURIS can have a genuine role.
+            </p>
+          </article>
+
+          <article class="vision-card">
+            <span class="vision-number">03</span>
+            <h3>Community With a Purpose</h3>
+            <p>
+              Community growth should create reasons to build, test and
+              improve. Ecosystem resources are intended to support useful
+              participation and development rather than manufactured hype.
+            </p>
+          </article>
+
+          <article class="vision-card">
+            <span class="vision-number">04</span>
+            <h3>Add Complexity Only When Needed</h3>
+            <p>
+              FIDURIS does not need every feature on day one. New utilities
+              should be introduced gradually, publicly documented and
+              evaluated before becoming part of the wider ecosystem.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="vision-statement">
+
+          <span>LONG-TERM DIRECTION</span>
+
+          <p>
+            The goal is to develop FIDURIS from a clear on-chain foundation
+            into a useful ecosystem shaped by real participation, practical
+            experimentation and lessons learned over time — without changing
+            the principle that important claims should remain publicly
+            verifiable.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
 
     <!-- TOKENOMICS -->
     <section id="tokenomics" class="section section-dark">
@@ -438,7 +539,7 @@
 
               <p>
                 <span>Vested at cliff</span>
-                <strong>≈333,333.33 FID</strong>
+                <strong>â‰ˆ333,333.33 FID</strong>
               </p>
             </div>
 
@@ -566,7 +667,7 @@
 
 
         <div class="policy-box">
-          <h3>Vesting controls availability — not spending.</h3>
+          <h3>Vesting controls availability â€” not spending.</h3>
 
           <p>
             Vested tokens are not automatically released, sold or spent.
@@ -644,7 +745,7 @@
 
             <article>
               <span>Initial BNB Side</span>
-              <strong>≈1 BNB</strong>
+              <strong>â‰ˆ1 BNB</strong>
             </article>
 
             <article>
@@ -669,7 +770,7 @@
 
             <article class="wide">
               <span>Configured Unlock</span>
-              <strong>20 August 2028 — 19:18:20 UTC</strong>
+              <strong>20 August 2028 â€” 19:18:20 UTC</strong>
             </article>
 
           </div>
@@ -793,7 +894,7 @@
             rel="noopener noreferrer"
           >
             <span>Mainnet Validation</span>
-            <strong>BUY Test — PASS</strong>
+            <strong>BUY Test â€” PASS</strong>
             <small>View transaction ↗</small>
           </a>
 
@@ -805,7 +906,7 @@
             rel="noopener noreferrer"
           >
             <span>Mainnet Validation</span>
-            <strong>SELL Test — PASS</strong>
+            <strong>SELL Test â€” PASS</strong>
             <small>View transaction ↗</small>
           </a>
 
@@ -904,37 +1005,39 @@
 
       </div>
     </section>
-
-
     <!-- PRINCIPLE -->
-    <section class="principle-section">
-      <div class="page-shell principle-layout">
+    <section class="principle-section redesigned-principle">
 
-        <div class="principle-mark">
-          <div class="hero-f large-f" aria-hidden="true">
-            <span class="f-top"></span>
-            <span class="f-mid"></span>
-            <span class="f-bottom"></span>
-          </div>
+      <div class="page-shell redesigned-principle-layout">
+
+        <div class="principle-logo-box">
+          <img src="assets/fiduris-logo.png" alt="FIDURIS">
         </div>
 
-        <div>
+        <div class="principle-copy">
+
           <p class="section-kicker">FIDURIS PRINCIPLE</p>
 
           <h2>
-            Clear by Design.
-            <span>Verifiable On-Chain.</span>
+            Facts where possible.
+            <span>Clear policy where code cannot enforce it.</span>
           </h2>
 
           <p>
-            Public documentation distinguishes between facts enforced by
-            deployed smart contracts and project policies that are not
-            technically enforced on-chain.
+            FIDURIS documentation distinguishes between properties enforced
+            directly by deployed smart contracts and project policies that
+            depend on future operational decisions. The purpose is simple:
+            users should be able to see what the blockchain guarantees and
+            what remains a stated project intention.
           </p>
+
         </div>
 
       </div>
+
     </section>
+
+
 
 
     <!-- DISCLAIMER -->
@@ -980,6 +1083,7 @@
 
       <div class="footer-links">
         <a href="#about">About</a>
+        <a href="#vision">Vision</a>
         <a href="#tokenomics">Tokenomics</a>
         <a href="#vesting">Vesting</a>
         <a href="#liquidity">Liquidity</a>
@@ -1002,7 +1106,7 @@
     </div>
 
     <div class="page-shell footer-bottom">
-      <span>FIDURIS — BNB Chain Mainnet</span>
+      <span>FIDURIS â€” BNB Chain Mainnet</span>
       <span>FID</span>
     </div>
   </footer>
@@ -1011,3 +1115,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
